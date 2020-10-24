@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "budgi"
+    }
+  },
+  "defaultProject": "budgi",
+  "cli": {
+    "analytics": "dfebdefa-2d44-4a5b-94bb-8d08dd91e2fd"
+  }
 }
