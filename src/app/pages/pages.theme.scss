@@ -1,0 +1,7 @@
+@use "./home/home.theme";
+@use "./login/login.theme";
+
+@mixin theme($theme-or-config) {
+    // @include home.theme($theme-or-config);
+    // @include login.theme($theme-or-config);
+}

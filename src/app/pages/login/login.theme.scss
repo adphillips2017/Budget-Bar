@@ -1,0 +1,16 @@
+@import "~@angular/material/theming";
+
+
+@mixin color($config-or-theme) {
+  $config: mat-get-color-config($config-or-theme);
+  $primary: map-get($config, primary);
+  $accent: map-get($config, accent);
+
+  .app-login {
+    .test {
+      background-color: mat-color($primary, 600);
+      color: mat-color($primary, '600-contrast');
+      border: 1px solid blue;
+    }
+  }
+}
