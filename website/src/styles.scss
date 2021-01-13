@@ -1,8 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import './custom-tailwind/custom-components.css';
+@import './custom-tailwind/custom-components.scss';
 @import 'tailwindcss/utilities';
-@import './custom-tailwind/custom-utilities.css';
+@import './custom-tailwind/custom-utilities.scss';
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
