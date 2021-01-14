@@ -1,0 +1,92 @@
+:host {
+    width: 100%;
+    justify-content: space-around;
+
+    .login-card {
+        max-width: 50%;
+        display: flex;
+        border-radius: 0.25rem;
+        border: 1px solid rgb(23, 35, 64);
+
+        .image-panel {
+            width: 33.33%;
+            background-image: url("../../../assets/images/stock-bar.jpeg");
+        }
+
+        .form-container {
+            width: 66.66%;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            background-color: rgb(12, 20, 39);
+
+            .header {
+                margin-bottom: 1.75rem;
+
+                .title {
+                    color: rgb(238, 244, 255);
+                    font-weight: 900;
+                    font-size: 25px;
+                    letter-spacing: -1px;
+                    margin-bottom: 1.5rem;
+
+                    .title-alt {
+                        color: rgb(114, 124, 245);
+                        font-weight: 300;
+                    }
+                }
+
+                .subtitle {
+                    color: rgb(120, 134, 161) !important;
+                }
+
+                .form {
+                    .input-field {
+                        margin-bottom: 1rem;
+
+                        .label {
+                            font-size: 0.875rem;
+                            line-height: 1.4rem;
+                            vertical-align: top;
+                            margin-bottom: 0.5rem;
+                        }
+
+                        .text-input {
+                            font-weight: 400;
+                            font-size: 0.875rem;
+                            border-width: 1px;
+                            border-style: solid;
+                            border-color: rgb(34, 42, 60);
+                            border-image: initial;
+                            box-shadow: none;
+                            outline: none;
+                            display: block;
+                            width: 100%;
+                            height: calc(1.5em + 0.75rem + 2px);
+                            line-height: 1;
+                            color: rgb(120, 134, 161);
+                            background-color: rgb(12, 20, 39);
+                            background-clip: padding-box;
+                            padding: 0.5rem 1rem;
+                            border-width: 1px;
+                            border-style: solid;
+                            border-color: rgb(206, 212, 218);
+                            border-image: initial;
+                            border-radius: 2px;
+                            transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+                        }
+
+                        .checkbox-field {
+                            display: flex;
+
+                            .checkbox {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
