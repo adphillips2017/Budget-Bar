@@ -40,50 +40,49 @@
                 .subtitle {
                     color: rgb(120, 134, 161) !important;
                 }
+            }
 
-                .form {
-                    .input-field {
-                        margin-bottom: 1rem;
+            .form {
+                .input-field {
+                    margin-bottom: 1rem;
 
-                        .label {
-                            font-size: 0.875rem;
-                            line-height: 1.4rem;
-                            vertical-align: top;
-                            margin-bottom: 0.5rem;
-                        }
+                    .label {
+                        font-size: 0.875rem;
+                        line-height: 1.4rem;
+                        vertical-align: top;
+                        margin-bottom: 0.5rem;
+                    }
 
-                        .text-input {
-                            font-weight: 400;
-                            font-size: 0.875rem;
-                            border-width: 1px;
-                            border-style: solid;
-                            border-color: rgb(34, 42, 60);
-                            border-image: initial;
-                            box-shadow: none;
-                            outline: none;
-                            display: block;
-                            width: 100%;
-                            height: calc(1.5em + 0.75rem + 2px);
-                            line-height: 1;
-                            color: rgb(120, 134, 161);
-                            background-color: rgb(12, 20, 39);
-                            background-clip: padding-box;
-                            padding: 0.5rem 1rem;
-                            border-width: 1px;
-                            border-style: solid;
-                            border-color: rgb(206, 212, 218);
-                            border-image: initial;
-                            border-radius: 2px;
-                            transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-                        }
+                    .text-input {
+                        font-weight: 400;
+                        font-size: 0.875rem;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: rgb(34, 42, 60);
+                        border-image: initial;
+                        box-shadow: none;
+                        outline: none;
+                        display: block;
+                        width: 100%;
+                        height: calc(1.5em + 0.75rem + 2px);
+                        line-height: 1;
+                        color: rgb(120, 134, 161);
+                        background-color: rgb(12, 20, 39);
+                        background-clip: padding-box;
+                        padding: 0.5rem 1rem;
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: rgb(206, 212, 218);
+                        border-image: initial;
+                        border-radius: 2px;
+                        transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+                    }
 
-                        .checkbox-field {
-                            display: flex;
+                    .checkbox-field {
+                        display: flex;
+                        width: 100%;
 
-                            .checkbox {
-                                
-                            }
-                        }
+                        .checkbox {}
                     }
                 }
             }
