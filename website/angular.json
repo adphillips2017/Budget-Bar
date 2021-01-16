@@ -30,16 +30,7 @@
               "src/.htaccess"
             ],
             "styles": [
-<<<<<<< HEAD
-              "src/styles.scss",
-<<<<<<< HEAD:website/angular.json
-              "src/theme.scss"
-=======
-              "src/assets/scss/style.scss"
->>>>>>> develop:budgi/angular.json
-=======
               "src/styles.scss"
->>>>>>> master
             ],
             "scripts": [
               "node_modules/apexcharts/dist/apexcharts.min.js"
@@ -79,12 +70,8 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-<<<<<<< HEAD
-            "browserTarget": "budgi-ui:build"
-=======
             "extraWebpackConfig": "webpack.config.js",
             "browserTarget": "budgi:build"
->>>>>>> master
           },
           "configurations": {
             "production": {
@@ -146,10 +133,6 @@
   },
   "defaultProject": "budgi-ui",
   "cli": {
-<<<<<<< HEAD:website/angular.json
-    "analytics": "5fe20766-1fab-4568-90e9-c5ca0f312299"
-=======
     "analytics": false
->>>>>>> develop:budgi/angular.json
   }
 }
