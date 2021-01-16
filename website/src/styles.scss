@@ -1,12 +1,22 @@
-<<<<<<< HEAD
-/* You can add global styles to this file, and also import other style files */
-=======
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import './custom-tailwind/custom-components.css';
-@import 'tailwindcss/utilities';
-@import './custom-tailwind/custom-utilities.css';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "./custom-tailwind/custom-components.scss";
+@import "tailwindcss/utilities";
+@import "./custom-tailwind/custom-utilities.scss";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
->>>>>>> master
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: Overpass, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(238, 244, 255);
+  text-align: left;
+  background-color: rgb(7, 13, 25);
+  height: 100%;
+  margin: 0px;
+}
