@@ -8,12 +8,6 @@
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
-<<<<<<< HEAD:website/angular.json
-        },
-        "@schematics/angular:application": {
-          "strict": true
-=======
->>>>>>> develop:budgi/angular.json
         }
       },
       "root": "",
@@ -21,9 +15,10 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "ngx-build-plus:browser",
           "options": {
-            "outputPath": "dist/budgi-ui",
+            "extraWebpackConfig": "webpack.config.js",
+            "outputPath": "dist/budgi",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -35,12 +30,16 @@
               "src/.htaccess"
             ],
             "styles": [
+<<<<<<< HEAD
               "src/styles.scss",
 <<<<<<< HEAD:website/angular.json
               "src/theme.scss"
 =======
               "src/assets/scss/style.scss"
 >>>>>>> develop:budgi/angular.json
+=======
+              "src/styles.scss"
+>>>>>>> master
             ],
             "scripts": [
               "node_modules/apexcharts/dist/apexcharts.min.js"
@@ -78,9 +77,14 @@
           }
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "builder": "ngx-build-plus:dev-server",
           "options": {
+<<<<<<< HEAD
             "browserTarget": "budgi-ui:build"
+=======
+            "extraWebpackConfig": "webpack.config.js",
+            "browserTarget": "budgi:build"
+>>>>>>> master
           },
           "configurations": {
             "production": {
@@ -95,8 +99,9 @@
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "builder": "ngx-build-plus:karma",
           "options": {
+            "extraWebpackConfig": "webpack.config.js",
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
