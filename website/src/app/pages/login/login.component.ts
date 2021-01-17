@@ -1,5 +1,11 @@
 import { Component, HostBinding } from '@angular/core';
 
+/*
+  @TODO:
+  Get animations to work properly.  Currently doesn't animate out.
+  Extract what CSS I can into tailwind custom classes for reuse.
+*/
+
 
 @Component({
   selector: 'app-login',
