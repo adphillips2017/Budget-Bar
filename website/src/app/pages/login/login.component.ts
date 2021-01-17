@@ -2,6 +2,7 @@ import { Component, HostBinding } from '@angular/core';
 
 /*
   @TODO:
+  Add in icon to error message.
   Get animations to work properly.  Currently doesn't animate out.
   Extract what CSS I can into tailwind custom classes for reuse.
 */
