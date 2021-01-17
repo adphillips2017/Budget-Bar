@@ -13,16 +13,15 @@
         <div class="form">
             <div class="input-field">
                 <div class="label">Email address</div>
-                <input class="text-input" type="email" placeholder="john_doe@email.com">
+                <input (input)="updateForm('email', $event)" class="text-input" type="email" placeholder="john_doe@email.com">
             </div>
 
             <div class="input-field">
                 <div class="label">Password</div>
-                <input class="text-input" type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
+                <input (input)="updateForm('password', $event)" class="text-input" type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
             </div>
 
-
-            <button class="button-primary">Login</button>
+            <button class="button-primary" (click)="submit()">Login</button>
 
             <div class="text-subtle">
                 Not a user? <span class="sign-up">Sign up</span>
