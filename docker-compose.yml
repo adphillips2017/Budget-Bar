@@ -1,0 +1,26 @@
+version: '3'
+services:
+  express-app:
+    build:
+      context: ./budget_bar_server
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: express-app
+    volumes:
+       - ./budget_bar_server:/usr/src/app/budget_bar_server
+       - serverdata:/usr/src/app/budget_bar_server/node_modules
+  angular-app:
+    build:
+      context: ./website
+      dockerfile: Dockerfile
+    ports:
+      - "4200:4200"
+    container_name: angular-app
+    volumes:
+       - ./website:/usr/src/app/website
+       - websitedata:/usr/src/app/website/node_modules
+
+volumes:
+  serverdata:
+  websitedata:
