@@ -1,32 +1,52 @@
-<div class="login-card">
-    <div class="image-panel"></div>
-    <div class="form-container">
-        <div class="header">
-            <div class="title">
-                Budget<span class="title-alt">.Bar</span>
+<div class="center-container">
+    <div class="login-card">
+        <div class="image-panel"></div>
+        <div class="form-container">
+            <div class="header">
+                <div class="title">
+                    Budget<span class="title-alt">.Bar</span>
+                </div>
+                <div class="subtitle">
+                    Welcome back!  Log in to your account.
+                </div>
             </div>
-            <div class="subtitle">
-                Welcome back!  Log in to your account.
+
+            <div class="form">
+                <div class="input-field">
+                    <div class="label">Email address</div>
+                    <input
+                        (blur)="validateField('email')"
+                        (input)="updateForm('email', $event)"
+                        (keyup)="checkForEnter($event)"
+                        class="text-input"
+                        [class.error]="errors.email"
+                        type="email"
+                        placeholder="john_doe@email.com"
+                    >
+                </div>
+
+                <div class="input-field">
+                    <div class="label">Password</div>
+                    <input
+                        (blur)="validateField('password')"
+                        (input)="updateForm('password', $event)"
+                        (keyup)="checkForEnter($event)"
+                        class="text-input"
+                        [class.error]="errors.password"
+                        type="password"
+                        placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;"
+                    >
+                </div>
+
+                <button class="button-primary" (click)="submit()">Login</button>
+
+                <div class="text-subtle">
+                    Not a user? <span class="sign-up">Sign up</span>
+                </div>
             </div>
         </div>
-
-        <div class="form">
-            <div class="input-field">
-                <div class="label">Email address</div>
-                <input class="text-input" type="email" placeholder="john_doe@email.com">
-            </div>
-
-            <div class="input-field">
-                <div class="label">Password</div>
-                <input class="text-input" type="password" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;">
-            </div>
-
-
-            <button class="button-primary">Login</button>
-
-            <div class="text-subtle">
-                Not a user? <span class="sign-up">Sign up</span>
-            </div>
-        </div>
+    </div>
+    <div class="error-message animate__animated animate__slideInDown" [class.animate__hinge]="errorMessage === ''" [class.show]="errorMessage !== ''">
+        {{ errorMessage }}
     </div>
 </div>
